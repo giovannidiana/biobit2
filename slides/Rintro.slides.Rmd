@@ -3,7 +3,7 @@ title: "Introduction to R"
 author: "Giovanni Diana"
 date: "14 Oct, 2020"
 output: 
-   github_document:
+   rmarkdown::github_document:
 #   slidy_presentation:
 #      fig_height: 5
 #      fig_width: 7
