@@ -1,0 +1,8 @@
+model {
+         
+		 pB ~ dbeta(1,1)
+         
+		 n ~ dbinom(pB,Ntot)
+		 	  
+         
+}

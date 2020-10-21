@@ -1,0 +1,14 @@
+model {
+         
+		 for(i in 1:3){
+			 pB[i] ~ dbeta(alpha,beta)
+		 }
+         
+	     alpha ~ dexp(0.001)
+		 beta ~ dexp(0.001)
+		 
+         for(j in 1:3){
+			  n[j] ~ dbinom(pB[j],Ntot[j])
+		 }	  
+         
+}

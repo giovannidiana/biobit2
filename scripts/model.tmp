@@ -1,0 +1,10 @@
+model {
+         
+         for(i in 1:N){
+			      X[i] ~ dnorm(m,t)
+         }
+
+         m ~ dt(2,2,1)
+         t ~ dgamma(1,1)		               
+		          
+}
